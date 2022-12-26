@@ -63,7 +63,7 @@ h1 {
 /* defining header2 style */
 h2 {
 	font-family: 'Satoshi', sans-serif;
-	font-size: 26px;
+	font-size: 24px;
 	line-height: 150%;
 	display: flex;
 	width: fit-content;
@@ -170,7 +170,7 @@ button:active {
 
 /* shaping html main so it's not ugly */
 main {
-	max-width: 700px;
+	max-width: 600px;
 	margin: 64px auto 32px auto;
 	display: flex;
 	flex-direction: column;
