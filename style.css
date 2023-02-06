@@ -295,8 +295,8 @@ main .projects .container .wrapper .project.pwebsite {
 }
 
 /* assigning picture in container from media/projects */
-main .projects .container .wrapper .project.python {
-	background-image: url('media/projects/python.png')
+main .projects .container .wrapper .project.paradym {
+	background-image: url('media/projects/paradym.webp')
 }
 
 /* assigning picture in container from media/projects */
@@ -306,12 +306,12 @@ main .projects .container .wrapper .project.tableau {
 
 /* assigning picture in container from media/projects */
 main .projects .container .wrapper .project.misinfy {
-	background-image: url('media/projects/Misinfy.png')
+	background-image: url('media/projects/Misinfy.webp')
 }
 
 /* assigning picture in container from media/projects */
-main .projects .container .wrapper .project.blog {
-	background-image: url('media/projects/web.png')
+main .projects .container .wrapper .project.newsletter {
+	background-image: url('media/projects/newsletter.webp')
 }
 
 /* assigning picture in container from media/projects */
