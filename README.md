@@ -1,4 +1,6 @@
-# [PortfolioWebsite](https://itsmikestang.web.app/) deployed with firebase hosting
+# [PortfolioWebsite](https://itsmikestang.web.app/)
+
+(deployed with firebase hosting)
 
 Say hello to my little friend! this portfolio website has been a must have for awhile now. I wanted to develop one for years, but my skillset wasn't quite up for the task, and I finally did! There are a few secrets around the website as well (hint: hover affects).
 
