@@ -300,8 +300,8 @@ main .projects .container .wrapper .project.paradym {
 }
 
 /* assigning picture in container from media/projects */
-main .projects .container .wrapper .project.tableau {
-	background-image: url('media/projects/Tableau.png')
+main .projects .container .wrapper .project.phunt {
+	background-image: url('media/projects/phunt.png')
 }
 
 /* assigning picture in container from media/projects */
@@ -315,8 +315,8 @@ main .projects .container .wrapper .project.newsletter {
 }
 
 /* assigning picture in container from media/projects */
-main .projects .container .wrapper .project.hogbank {
-	background-image: url('media/projects/hogbank.png')
+main .projects .container .wrapper .project.tableu {
+	background-image: url('media/projects/Tableau.pmg')
 }
 
 main .projects .container .wrapper:hover > .text, main .projects .container .wrapper:hover > .text > * {
