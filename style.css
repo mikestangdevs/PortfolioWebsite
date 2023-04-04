@@ -315,8 +315,8 @@ main .projects .container .wrapper .project.newsletter {
 }
 
 /* assigning picture in container from media/projects */
-main .projects .container .wrapper .project.tableu {
-	background-image: url('media/projects/Tableau.pmg')
+main .projects .container .wrapper .project.coldfront {
+	background-image: url('media/projects/coldfront.webp')
 }
 
 main .projects .container .wrapper:hover > .text, main .projects .container .wrapper:hover > .text > * {
