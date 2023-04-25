@@ -291,7 +291,7 @@ main .projects .container .wrapper .project {
 
 /* assigning picture in container from media/projects */
 main .projects .container .wrapper .project.pwebsite {
-	background-image: url('media/projects/pweb.png')
+	background-image: url('media/projects/pweb.webp')
 }
 
 /* assigning picture in container from media/projects */
