@@ -1,5 +1,4 @@
 <!--my first website so I will be commenting like a noob for documentation-->
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,12 +6,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css" />
     <title>Michael Stang</title>
-    <link rel="stylesheet" href="style.css" />
     <!-- favicon -->
     <link rel="icon" type="image/x-icon" href="media/Me2Favicon.png">
+    <meta
+        content="My personal website! It's about, well, me, and showcases some of my work! It also lists my social media and ways to get in touch with me."
+        property="og:description" />
     <meta content="#1031ae" data-react-helmet="true" name="theme-color" />
     <meta content="BigMike's Website" property="og:title" />
+    <meta content="https://mikestang.com/" property="og:url" />
+    <meta content="https://mikestang.com/media/Me2.png" property="og:image" />
     <!-- linking icons -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <!-- linking icons -->
@@ -23,7 +27,7 @@
     <main>
         <img src="media/Me2.png" alt="My profile picture">
         <section class="about">
-            <h1><span class="greeting">Hey!</span> I’m Mike, aka BigMike.</h1>
+            <h1><span>Hey!</span> I’m Mike, aka BigMike.</h1>
             <div class="body">
                 <h2>
                     <span class="t">t</span>
@@ -184,11 +188,9 @@
                 <ion-icon name="moon-outline" id="theme-icon"></ion-icon>
             </button>
         </footer>
-
     </main>
     <!-- calling JS file so theme applies -->
     <script src="script.js"></script>
-
 </body>
 
 </html>

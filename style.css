@@ -2,7 +2,7 @@
 @import url(https://fonts.cdnfonts.com/css/satoshi);
 
 /* creating light mode (white) */
-light-theme {
+.light-theme {
 	--background-1: #FCFCFC;
 	--background-2: #f5f5f5;
 	--background-3: #E6E6E6;
@@ -11,6 +11,8 @@ light-theme {
 	--foreground-1: #0f0f0f;
 	--foreground-2: #616161;
 	--foreground-3: #D6D6D6;
+	--text-shadow: rgba(0 0 0 / 30%);
+	--text-shadow: rgba(256 256 256 / 50%);
 }
 
 /* creating dark mode (black) */
@@ -36,15 +38,22 @@ light-theme {
 *:not(body, html, .text) {
 	animation: fade-in 1s;
 }
+
 /* page fade in on load/refresh */
 @keyframes fade-in {
-	0% { opacity: 0; }
-	100% { opacity: 1; }
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
 }
 
 /* defining html body style */
-html, body {
-  width: 100%;
+html,
+body {
+	width: 100%;
 	font-family: 'Satoshi', sans-serif;
 	font-size: 20px;
 	line-height: 150%;
@@ -94,11 +103,10 @@ h2:hover .r::after {
 
 /* coloring font according to theme and size input */
 p {
-	color: var(--foreground-4);
+	color: var(--foreground-2);
 	font-size: 24px;
 }
 
-/* coloring bullet point font to theme, defining font size and defining margin placement */
 li {
 	margin-left: 18px;
 	font-size: 24px;
@@ -111,7 +119,7 @@ a {
 	text-decoration: none;
 	transition: 120ms ease-out;
 	border-bottom: 1.5px solid var(--foreground-3);
-	padding-bottom: 1px;	
+	padding-bottom: 1px;
 	color: var(--foreground-1);
 	display: inline-flex;
 	align-items: center;
@@ -126,22 +134,30 @@ a:hover {
 	top: -2px;
 }
 
-a:active {
+a:hover:not(.wrapper) {
+	text-decoration-color: var(--foreground-1);
+	border-color: var(--foreground-1);
+	top: -2px;
+	filter: drop-shadow(0 8px 4px var(--text-shadow));
+}
+
+a:active:not(.wrapper) {
 	top: -1px;
 }
 
-a > svg {
+a>svg {
 	transition: 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.5);
 	stroke: var(--foreground-1);
 	width: 22px;
 	height: 22px;
 }
 
-a:hover > svg:not(.dont) {
+a:hover>svg:not(.dont) {
 	transform: translate(4px, -4px);
 }
 
-a:focus-visible, button:focus-visible {
+a:focus-visible,
+button:focus-visible {
 	outline: 2px solid var(--foreground-1);
 	outline-offset: 4px;
 	border-radius: 0 !important;
@@ -179,7 +195,7 @@ main {
 }
 
 /* circle cropping & setting main img size */
-main > img {
+main>img {
 	width: 180px;
 	height: 180px;
 	border-radius: 50%;
@@ -188,16 +204,34 @@ main > img {
 
 img:hover {
 	animation: jiggle 0.3s infinite;
+	filter: drop-shadow(0 8px 4px var(--text-shadow));
 }
 
 /* creating img jiggle */
 @keyframes jiggle {
-	0% { transform:  rotate(0deg) translate(1px, 1px) }
-	20% { transform: rotate(-0.5deg) translate(-1px, -2px) }
-	40% { transform: rotate(0deg) translate(-3px, 0px); }
-	60% { transform: rotate(0.5deg) translate(3px, 2px); }
-	80% { transform: rotate(0deg) translate(-1px, 2px); }
-	100% { transform: rotate(-0.5deg) translate(1px, 1px); }
+	0% {
+		transform: rotate(0deg) translate(1px, 1px)
+	}
+
+	20% {
+		transform: rotate(-0.5deg) translate(-1px, -2px)
+	}
+
+	40% {
+		transform: rotate(0deg) translate(-3px, 0px);
+	}
+
+	60% {
+		transform: rotate(0.5deg) translate(3px, 2px);
+	}
+
+	80% {
+		transform: rotate(0deg) translate(-1px, 2px);
+	}
+
+	100% {
+		transform: rotate(-0.5deg) translate(1px, 1px);
+	}
 }
 
 main section {
@@ -212,19 +246,34 @@ main .about h1 span {
 	opacity: 1 !important;
 }
 
-/* hover affect for about section for word "HEY!" */
+/* hover and highlight affect for about section for word "HEY!" */
 main .about h1 span:hover {
 	transform: scale(1.1);
 	animation: wave 0.5s;
+	filter: drop-shadow(0 8px 4px var(--text-shadow));
 }
 
 /* "HEY!" jiggle */
 @keyframes wave {
-	0% { transform: scale(1.1); }
-	25% { transform: scale(1.1) rotate(-3deg); }	
-	50% { transform: scale(1.1) rotate(3deg); }
-	75% { transform: scale(1.1) rotate(-3deg); }
-	100% { transform: scale(1.1) rotate(3deg); }
+	0% {
+		transform: scale(1.1);
+	}
+
+	25% {
+		transform: scale(1.1) rotate(-3deg);
+	}
+
+	50% {
+		transform: scale(1.1) rotate(3deg);
+	}
+
+	75% {
+		transform: scale(1.1) rotate(-3deg);
+	}
+
+	100% {
+		transform: scale(1.1) rotate(3deg);
+	}
 }
 
 main .body {
@@ -306,7 +355,7 @@ main .projects .container .wrapper .project.phunt {
 
 /* assigning picture in container from media/projects */
 main .projects .container .wrapper .project.misinfy {
-	background-image: url('media/projects/Misinfy.webp')
+	background-image: url('media/projects/misinfy.webp')
 }
 
 /* assigning picture in container from media/projects */
@@ -319,7 +368,8 @@ main .projects .container .wrapper .project.coldfront {
 	background-image: url('media/projects/coldfront.webp')
 }
 
-main .projects .container .wrapper:hover > .text, main .projects .container .wrapper:hover > .text > * {
+main .projects .container .wrapper:hover>.text,
+main .projects .container .wrapper:hover>.text>* {
 	opacity: 1 !important;
 	bottom: 0 !important;
 }
@@ -338,7 +388,7 @@ main .projects .container .wrapper .text {
 	background: var(--background-transparent-1);
 }
 
-main .projects .container .wrapper .text > * {
+main .projects .container .wrapper .text>* {
 	bottom: -8px;
 	position: relative;
 	transition: 120ms ease-out;
@@ -375,8 +425,13 @@ main footer .socials a {
 	font-size: 18px;
 }
 
-main footer .socials a ion-icon, main footer .socials a svg:first-child {
+main footer .socials a ion-icon,
+main footer .socials a svg:first-child {
 	margin-right: 4px;
+}
+
+main footer .socials a:last-child svg path {
+	transition: 120ms ease-out;
 }
 
 main footer button {
@@ -404,10 +459,10 @@ main footer button ion-icon {
 	main {
 		margin: 0;
 	}
-	
+
 	main .projects .container .wrapper {
 		width: 100%;
-	}	
+	}
 
 	main .projects .container .wrapper .project {
 		width: 100%;
@@ -422,7 +477,7 @@ main footer button ion-icon {
 		align-items: flex-start;
 	}
 
-	main footer .socials { 
+	main footer .socials {
 		flex-direction: column;
 	}
 }
@@ -465,4 +520,3 @@ main footer button ion-icon {
 	}
 }
 */
-
