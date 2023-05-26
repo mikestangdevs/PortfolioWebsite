@@ -339,13 +339,13 @@ main .projects .container .wrapper .project {
 }
 
 /* assigning picture in container from media/projects */
-main .projects .container .wrapper .project.pwebsite {
-	background-image: url('media/projects/pweb.webp')
+main .projects .container .wrapper .project.futurai {
+	background-image: url('media/projects/futurai.webp')
 }
 
 /* assigning picture in container from media/projects */
-main .projects .container .wrapper .project.paradym {
-	background-image: url('media/projects/paradym.webp')
+main .projects .container .wrapper .project.coldfront {
+	background-image: url('media/projects/coldfront.webp')
 }
 
 /* assigning picture in container from media/projects */
@@ -359,13 +359,13 @@ main .projects .container .wrapper .project.misinfy {
 }
 
 /* assigning picture in container from media/projects */
-main .projects .container .wrapper .project.newsletter {
-	background-image: url('media/projects/newsletter.webp')
+main .projects .container .wrapper .project.paradym {
+	background-image: url('media/projects/paradym.webp')
 }
 
 /* assigning picture in container from media/projects */
-main .projects .container .wrapper .project.coldfront {
-	background-image: url('media/projects/coldfront.webp')
+main .projects .container .wrapper .project.pwebsite {
+	background-image: url('media/projects/pweb.webp')
 }
 
 main .projects .container .wrapper:hover>.text,
