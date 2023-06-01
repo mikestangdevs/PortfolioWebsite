@@ -339,8 +339,8 @@ main .projects .container .wrapper .project {
 }
 
 /* assigning picture in container from media/projects */
-main .projects .container .wrapper .project.futurai {
-	background-image: url('media/projects/futurai.webp')
+main .projects .container .wrapper .project.prevolve {
+	background-image: url('media/projects/prevolve.webp')
 }
 
 /* assigning picture in container from media/projects */
