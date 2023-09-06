@@ -339,18 +339,23 @@ main .projects .container .wrapper .project {
 }
 
 /* assigning picture in container from media/projects */
+main .projects .container .wrapper .project.cadocash {
+	background-image: url('media/projects/cado$.svg')
+}
+
+/* assigning picture in container from media/projects */
 main .projects .container .wrapper .project.prevolve {
 	background-image: url('media/projects/prevolve.webp')
 }
 
 /* assigning picture in container from media/projects */
-main .projects .container .wrapper .project.coldfront {
-	background-image: url('media/projects/coldfront.webp')
+main .projects .container .wrapper .project.phunt {
+	background-image: url('media/projects/phunt.png')
 }
 
 /* assigning picture in container from media/projects */
-main .projects .container .wrapper .project.phunt {
-	background-image: url('media/projects/phunt.png')
+main .projects .container .wrapper .project.coldfront {
+	background-image: url('media/projects/coldfront.webp')
 }
 
 /* assigning picture in container from media/projects */
@@ -361,11 +366,6 @@ main .projects .container .wrapper .project.misinfy {
 /* assigning picture in container from media/projects */
 main .projects .container .wrapper .project.paradym {
 	background-image: url('media/projects/paradym.webp')
-}
-
-/* assigning picture in container from media/projects */
-main .projects .container .wrapper .project.pwebsite {
-	background-image: url('media/projects/pweb.webp')
 }
 
 main .projects .container .wrapper:hover>.text,
