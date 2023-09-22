@@ -368,6 +368,15 @@ main .projects .container .wrapper .project.paradym {
 	background-image: url('media/projects/paradym.webp')
 }
 
+/* assigning picture in container from media/projects to redesign section */
+main .projects .container .wrapper .project.linkedinvs {
+	background-image: url('media/projects/linkedin4VS.svg')
+}
+
+main .projects .container .wrapper .project.chromey {
+	background-image: url('media/projects/chromey.webp')
+}
+
 main .projects .container .wrapper:hover>.text,
 main .projects .container .wrapper:hover>.text>* {
 	opacity: 1 !important;
