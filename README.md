@@ -11,5 +11,7 @@ Feel free to take inspiration!
 Here's a shot of the page on load in (it wil be white for you):
 
 ## V1:
-<img width="1459" alt="Screenshot 2023-03-31 at 9 12 34 PM" src="https://user-images.githubusercontent.com/104747065/229261054-5920d341-ccc6-4477-9ef4-2e94ec599aaa.png">
+<img width="1200" alt="Screenshot 2023-03-31 at 9 12 34 PM" src="https://user-images.githubusercontent.com/104747065/229261054-5920d341-ccc6-4477-9ef4-2e94ec599aaa.png">
 
+## V1.1:
+<img width="1200" src="/media/Screenshot 2023-10-11 at 10.49.22 PM.png">
