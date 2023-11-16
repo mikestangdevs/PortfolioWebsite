@@ -1,7 +1,0 @@
-img {
-    display: flex; 
-    width: 95%;    /* 100% of the viewport width */
-    height: 95%;   /* 100% of the viewport height */
-    justify-content: center;
-    align-items: center;  
-}
