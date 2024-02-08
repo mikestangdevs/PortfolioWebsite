@@ -426,6 +426,14 @@ main .projects .container .wrapper .project.chromey {
 	background-image: url('media/projects/chromey.webp')
 }
 
+main .projects .container .wrapper .project.rabbit {
+	background-image: url('media/projects/rabbit.webp')
+}
+
+main .projects .container .wrapper .project.finsta {
+	background-image: url('media/projects/finsta4VS.svg')
+}
+
 main .projects .container .wrapper:hover>.text,
 main .projects .container .wrapper:hover>.text>* {
 	opacity: 1 !important;
