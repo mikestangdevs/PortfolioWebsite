@@ -15,3 +15,6 @@ Here's a shot of the page on load in (it wil be white for you):
 
 ## V1.1:
 ![V1.1](/media/V1.1.png)
+
+## V2:
+![V2](media/V2.png)

@@ -1,330 +1,134 @@
-<!--my first website so I will be commenting like a noob for documentation-->
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet" type="text/css" />
     <title>Michael Stang</title>
-    <!-- favicon -->
-    <link rel="icon" type="image/x-icon" href="media/Me-1purp.png">
-    <meta
-        content="My personal website! It's all about me and showcases some of my work! It also lists my social media and ways to get in touch with me."
-        property="og:description" />
-    <meta content="#1031ae" data-react-helmet="true" name="theme-color" />
-    <meta content="BigMike's Website" property="og:title" />
-    <meta content="https://mikestang.com/" property="og:url" />
-    <meta content="https://mikestang.com/media/Me2.png" property="og:image" />
-    <!-- linking icons -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <!-- linking icons -->
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-analytics.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body class="" id="body">
     <main>
-        <img src="media/Me-1purp.png" alt="My profile picture">
-        <section class="about">
-            <h1><span>Hey!</span> I’m Mike.</h1>
-            <div class="body">
-                <h2>
-                    <span class="t">t</span>
-                    <span class="l">l</span>
-                    <span class="semi">;</span>
-                    <span class="d">d</span>
-                    <span class="r">r</span>
-                </h2>
+        <div class="side y top"></div>
+        <div class="side x right"></div>
+        <div class="side y bottom"></div>
+        <div class="side x left"></div>
 
+        <div class="nav-wrapper">
+            <nav class="navigation" style="--animation-order:3;">
                 <ul>
-                    <li>All about product, data, and &amp; developing</li>
-
-                    <li> 2023 Information Systems grad</li>
-
-                    <li> Currently @ <a href="https://www.motorolasolutions.com/en_us.html" target="_blank">Motorola
-                            Solutions</a></li>
-
-                    <li> Previously @ <a href="https://www.radicalx.co/" target="_blank">RadicalX</a> , <a
-                            href="https://www.linkedin.com/posts/m-stang_thankyou-merchandising-thisishowweintern-activity-6960654663020937216-xv4z?utm_source=share&utm_medium=member_desktop"
-                            target="_blank">Walmart</a></li>
+                    <li>
+                        <a href="#home">
+                            <img src="media/Me-1purp.png">
+                        </a>
+                    </li>
+                    <div class="line"></div>
+                    <li class="">
+                        <a href="#about">About</a>
+                    </li>
+                    <div class="line"></div>
+                    <li class="">
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <div class="line"></div>
+                    <li class="">
+                        <a href="#contact">Contact</a>
+                    </li>
                 </ul>
-
-                <p>Captivated by the world of software and product design, I thrive in the intricate dance of
-                    decision-making that shapes exceptional web, app, and product experiences. As a lifelong learner
-                    with a love for adrenaline-pumping sports and good eats, my curiosity knows no bounds.</p>
-
-                <p>I am on a journey to revolutionize the way products evolve, I'm committed to steering clear of
-                    "feature factories" and challenging the status quo. Inspired by Amazon's ingenious "working
-                    backward" approach, I'm eager to refine my development skills and unlock the full potential of every
-                    project I touch.</p>
-            </div>
-        </section>
-
-        <div class="sidebar" id="sidebar">
-            <a href="https://www.linkedin.com/in/m-stang/" target="_blank">
-                <!-- embedding icon -->
-                <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-
-            <a href="https://twitter.com/TalkingStang" target="_blank">
-                <!-- embedding icon -->
-                <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-
-            <a href="https://github.com/mikestangdevs" target="_blank">
-                <!-- embedding icon -->
-                <ion-icon name="logo-github"></ion-icon>
-            </a>
-
-            <a href="https://dribbble.com/mikestang" target="_blank">
-                <!-- embedding icon -->
-                <ion-icon name="logo-dribbble"></ion-icon>
-            </a>
+            </nav>
         </div>
 
-        <!--
-        <section class="projects">
-            <div class="header">
-                <h1>Mini Courses</h1>
-                <p>Enjoy some knowledge on the house</p>
+        <section class="home" id="home">
+            <h1 style="--animation-order:1;" class="animate-in">Mike Stang</h1>
+            <p style="--animation-order:2;" class="animate-in">aka Big Mike</p>
+        </section>
+
+        <section class="about" id="about">
+            <div class="text">
+                <p>• All about product, data, and & developing</p>
+                <p>• Interested in anything web design or UI/UX in general. Also likes playing ping-pong and piano (not
+                    at the
+                    same time).</p>
+
+                <p>• Currently @ <a href="https://www.motorolasolutions.com/en_us.html" target="_blank">Motorola</a>.
+                </p>
+
+                <p>• Previously @ <a href="https://www.radicalx.co/" target="_blank">RadicalX</a>, and <a
+                        href="https://www.linkedin.com/posts/m-stang_thankyou-merchandising-thisishowweintern-activity-6960654663020937216-xv4z?utm_source=share&utm_medium=member_desktop"
+                        target="_blank">Walmart</a>.
+                </p>
+            </div>
+        </section>
+
+        <section class="projects" id="projects">
+            <div class="col">
+                <a href="media/projects/Modernizing Fetti.pdf" target="_blank">
+                    <div class="project fetti">
+                    </div>
+                </a>
+
+                <a href="media/projects/MAKERLYTICS for Product Hunt.pdf" target="_blank">
+                    <div class="project phunt">
+                    </div>
+                </a>
+
+                <a href="https://coldfront.vercel.app/" target="_blank">
+                    <div class="project coldfront">
+                    </div>
+                </a>
+
+                <a href="https://prezi.com/i/view/Q7MeygdA8youTHAe8nku" target="_blank">
+                    <div class="project misinfy">
+                    </div>
+                </a>
+
+                <a href="https://paradymsecurity.web.app/" target="_blank">
+                    <div class="project paradym">
+                    </div>
+                </a>
             </div>
 
-            <div class="cards">
-                <a href="#">
-                    <div class="card">
-                        <img src="media/courses">
+            <div class="col">
+                <a href="https://dribbble.com/shots/22465554-Cadocash-Holistic-Financial-Management?utm_source=Clipboard_Shot&utm_campaign=mikestang&utm_content=Cadocash%3A%20Holistic%20Financial%20Management&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=mikestang&utm_content=Cadocash%3A%20Holistic%20Financial%20Management&utm_medium=Social_Share"
+                    target="_blank">
+                    <div class="project cadocash">
                     </div>
                 </a>
 
-                <a href="#">
-                    <div class="card">
-                        <img src="media/courses/">
+                <a href="https://dribbble.com/shots/22314937-LinkedIn-for-VisionOS?utm_source=Clipboard_Shot&utm_campaign=mikestang&utm_content=LinkedIn%20for%20VisionOS&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=mikestang&utm_content=LinkedIn%20for%20VisionOS&utm_medium=Social_Share"
+                    target="_blank">
+                    <div class="project linkedinvs">
                     </div>
                 </a>
 
-
-                <a href="#">
-                    <div class="card">
-                        <img src="media/courses/">
+                <a href="https://dribbble.com/shots/22635870-Googling-Google-Chrome?utm_source=Clipboard_Shot&utm_campaign=mikestang&utm_content=Googling%20Google%20Chrome&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=mikestang&utm_content=Googling%20Google%20Chrome&utm_medium=Social_Share"
+                    target="_blank">
+                    <div class="project chromey">
                     </div>
                 </a>
 
-                <a href="">
-                    <div class="card">
-                        <img src="media/courses/">
+                <a href="https://dribbble.com/shots/23446478-rabbit-r1-but-better?utm_source=Clipboard_Shot&utm_campaign=mikestang&utm_content=rabbit%20r1%20but%20better&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=mikestang&utm_content=rabbit%20r1%20but%20better&utm_medium=Social_Share"
+                    target="_blank">
+                    <div class="project rabbit">
                     </div>
                 </a>
             </div>
         </section>
-        -->
 
-        <section class="projects">
-            <div class="header">
-                <h1>Projects</h1>
-                <div class="container">
-
-                    <a href="media/projects/Modernizing Fetti.pdf" class="wrapper" target="_blank">
-                        <div class="project fetii"></div>
-
-                        <div class="text">
-                            <h2>Fetii Case Study</h2>
-
-                            <p>A much needed app modernization</p>
-                        </div>
-                    </a>
-
-                    <a href="https://dribbble.com/shots/22465554-Cadocash-Holistic-Financial-Management?utm_source=Clipboard_Shot&utm_campaign=mikestang&utm_content=Cadocash%3A%20Holistic%20Financial%20Management&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=mikestang&utm_content=Cadocash%3A%20Holistic%20Financial%20Management&utm_medium=Social_Share"
-                        class="wrapper" target="_blank">
-                        <div class="project cadocash"></div>
-
-                        <div class="text">
-                            <h2>Cado Cash</h2>
-
-                            <p>Holistic financial management app</p>
-                        </div>
-                    </a>
-
-                    <a href="media/projects/MAKERLYTICS for Product Hunt.pdf" class="wrapper" target="_blank">
-                        <div class="project phunt">
-                        </div>
-
-                        <div class="text">
-                            <h2>Product Hunt Case Study</h2>
-
-                            <p>2 features I think Product Hunt should implement.</p>
-                        </div>
-                    </a>
-
-                    <a href="https://coldfront.vercel.app/" class="wrapper" target="_blank">
-                        <div class="project coldfront">
-                        </div>
-
-                        <div class="text">
-                            <h2>ColdFront</h2>
-
-                            <p>Simple web application focused on sharing public weather data and creating predictions
-                            </p>
-                        </div>
-                    </a>
-
-                    <a href="https://prezi.com/i/view/Q7MeygdA8youTHAe8nku" class="wrapper" target="_blank">
-                        <div class="project misinfy">
-                        </div>
-
-                        <div class="text">
-                            <h2>Misinfy</h2>
-
-                            <p>Blockchain-backed fact checker that lives in any browser.</p>
-                        </div>
-                    </a>
-
-                    <a href="https://paradymsecurity.web.app/" class="wrapper" target="_blank">
-                        <div class="project paradym"></div>
-
-                        <div class="text">
-                            <h2>Paradym</h2>
-
-                            <p>A secure camera for a secure life</p>
-                        </div>
-                    </a>
-                </div>
+        <section class="contact" id="contact">
+            <p>Find me anywhere:</p>
+            <div class="links">
+                <a href="mailto:mikestang808@gmail.com" target="_blank">Email</a>
+                <a href="https://www.linkedin.com/in/m-stang/" target="_blank">LinkedIn</a>
+                <a href="https://dribbble.com/mikestang" target="_blank">Dribbble</a>
             </div>
 
-            <section class="projects">
-                <div class="header">
-                    <h1>Redesigns</h1>
-                    <div class="container">
-
-                        <a href="https://dribbble.com/shots/22314937-LinkedIn-for-VisionOS?utm_source=Clipboard_Shot&utm_campaign=mikestang&utm_content=LinkedIn%20for%20VisionOS&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=mikestang&utm_content=LinkedIn%20for%20VisionOS&utm_medium=Social_Share"
-                            class="wrapper" target="_blank">
-                            <div class="project linkedinvs"></div>
-
-                            <div class="text">
-                                <h2>LinkedIn 4 VisionOS</h2>
-
-                                <p>LinkedIn reimagined for the Vision Pro</p>
-                            </div>
-                        </a>
-
-                        <a href="https://dribbble.com/shots/22635870-Googling-Google-Chrome?utm_source=Clipboard_Shot&utm_campaign=mikestang&utm_content=Googling%20Google%20Chrome&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=mikestang&utm_content=Googling%20Google%20Chrome&utm_medium=Social_Share"
-                            class="wrapper" target="_blank">
-                            <div class="project chromey"></div>
-
-                            <div class="text">
-                                <h2>Google Chrome Reno</h2>
-
-                                <p>Making Google Chrome mobile home page more Google</p>
-                            </div>
-                        </a>
-
-                        <!--<a href="https://dribbble.com/shots/23446478-rabbit-r1-but-better?utm_source=Clipboard_Shot&utm_campaign=mikestang&utm_content=rabbit%20r1%20but%20better&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=mikestang&utm_content=rabbit%20r1%20but%20better&utm_medium=Social_Share"
-                            class="wrapper" target="_blank">
-                            <div class="project rabbit"></div>
-
-                            <div class="text">
-                                <h2>Rabbit R1 for PMs</h2>
-
-                                <p>Prompting rabbit r1 to do my work</p>
-                            </div>
-                        </a>-->
-                        
-                        <p>Also: <a
-                                href="https://dribbble.com/shots/23446478-rabbit-r1-but-better?utm_source=Clipboard_Shot&utm_campaign=mikestang&utm_content=rabbit%20r1%20but%20better&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=mikestang&utm_content=rabbit%20r1%20but%20better&utm_medium=Social_Share" target="_blank">Rabbit
-                                R1 for PMs</a>, <a href="https://webot-zeta.vercel.app/" target="_blank">GPT web-bot</a>
-                        </p>
-                    </div>
-
-
-            </section>
-            <section class="sayhi">
-                <h1>Say hi! <span class="wave">😁</span></h1>
-
-                <div class="body">
-                    <p>You can email me at <a href="mailto:mikestang808@gmail.com"
-                            target="_blank">mikestang808@gmail.com</a></p>
-
-                    <p>You can find me all over the worldwide web, but use the links below to make it easy on yourself.
-                    </p>
-                </div>
-            </section>
-            <footer>
-                <div class="socials">
-                    <a href="https://www.linkedin.com/in/m-stang/" target="_blank">
-                        <!-- embedding icon -->
-                        <ion-icon name="logo-linkedin"></ion-icon>
-
-                        <span>LinkedIn</span>
-
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-                            <path d="M7 17.1855L17 7.18555" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                            </path>
-                            <path d="M7 7.18555H17V17.1855" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                            </path>
-                        </svg>
-                    </a>
-
-                    <a href="https://twitter.com/TalkingStang" target="_blank">
-                        <!-- embedding icon -->
-                        <ion-icon name="logo-twitter"></ion-icon>
-
-                        <span>twitter</span>
-
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-                            <path d="M7 17.1855L17 7.18555" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                            </path>
-                            <path d="M7 7.18555H17V17.1855" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                            </path>
-                        </svg>
-                    </a>
-
-                    <a href="https://github.com/mikestangdevs" target="_blank">
-                        <!-- embedding icon -->
-                        <ion-icon name="logo-github"></ion-icon>
-
-                        <span>Github</span>
-
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-                            <path d="M7 17.1855L17 7.18555" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                            </path>
-                            <path d="M7 7.18555H17V17.1855" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                            </path>
-                        </svg>
-                    </a>
-
-                    <a href="https://dribbble.com/mikestang" target="_blank">
-                        <!-- embedding icon -->
-                        <ion-icon name="logo-dribbble"></ion-icon>
-
-                        <span>Dribbble</span>
-
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-                            <path d="M7 17.1855L17 7.18555" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                            </path>
-                            <path d="M7 7.18555H17V17.1855" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                            </path>
-                        </svg>
-                    </a>
-                </div>
-                <!-- calling on change theme function and attaching icon to switch from dark mode -> light mode -->
-                <button onclick="changeTheme();">
-                    <ion-icon name="moon-outline" id="theme-icon"></ion-icon>
-                </button>
-            </footer>
+            <button onclick="changeTheme();" class="theme-button" id="theme-button">theme</button>
+        </section>
     </main>
-    <!-- calling JS file so theme applies -->
-    <script src="/javascript/script.js"></script>
-    <script src="/javascript/analytics.js"></script>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
