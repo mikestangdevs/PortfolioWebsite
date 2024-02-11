@@ -426,11 +426,11 @@ section {
 }
 
 .projects .col:last-child {
-	/* margin-top: calc(((100vw - 164px) / 2) / 2); */
+	margin-top: calc(((100vw - 164px) / 2) / 2);
 }
 
 .projects .col .project {
-	/* background: rgba(0 0 0 / 5%); */
+	background: rgba(0 0 0 / 5%);
 	width: calc((100vw - 226px) / 2);
 	height: calc((100vw - 226px) / 2);
 	transition: box-shadow 300ms ease-out, transform 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.5);
