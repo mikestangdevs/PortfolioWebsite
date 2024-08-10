@@ -52,15 +52,6 @@
 	transition: background 300ms ease-out, color 300ms ease-out;
 }
 
-.animate-in {
-	animation-name: animate-in;
-	animation-duration: 0.5s;
-	animation-delay: calc(var(--animation-order) * 1s);
-	animation-fill-mode: both;
-	animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.5);
-	position: relative;
-}
-
 @keyframes animate-in {
 	0% {
 		opacity: 0;
@@ -75,14 +66,6 @@
 	}
 }
 
-@media (prefers-reduced-motion) {
-
-	.animate-in,
-	nav {
-		animation: none !important;
-	}
-}
-
 html,
 body {
 	height: 100%;
@@ -90,7 +73,6 @@ body {
 	scroll-behavior: smooth;
 	font-family: Helvetica Neue, sans-serif;
 	background: var(--page-background);
-	animation: overlay 4s;
 }
 
 @keyframes overlay {
@@ -158,7 +140,6 @@ main::after {
 	position: fixed;
 	pointer-events: none;
 	opacity: 1;
-	animation: frame 5s ease-out;
 	z-index: 500;
 }
 
@@ -256,11 +237,6 @@ nav {
 	box-shadow: 0 8px 20px var(--project-shadow-active);
 	transition: background 300ms ease-out, box-shadow 300ms ease-out, transform 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.5);
 	padding: 4px;
-	animation-name: animate-in-nav;
-	animation-duration: 1s;
-	animation-delay: calc(var(--animation-order) * 1s);
-	animation-fill-mode: both;
-	animation-timing-function: cubic-bezier(0.18, 0.89, 0.15, 1.5);
 }
 
 @keyframes animate-in-nav {
@@ -612,7 +588,6 @@ section {
 		bottom: clamp(32px, 12vw, 64px);
 		margin-top: auto;
 		position: fixed !important;
-		animation-name: animate-in-nav;
 	}
 
 	@keyframes animate-in-nav {
