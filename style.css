@@ -437,6 +437,10 @@ section {
 	transform: scale(1.01);
 }
 
+.projects .col .project.reddit {
+	background-image: url('media/projects/r:redesign.png');
+}
+
 .projects .col .project.fetti {
 	background-image: url('media/projects/fetii.webp');
 }
